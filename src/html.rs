@@ -2,10 +2,10 @@ use maud::{html, Markup, DOCTYPE};
 
 fn header(page_title: &str) -> Markup {
     html! {
+        (DOCTYPE)
         head {
-            (DOCTYPE)
             meta charset="utf-8";
-            link rel="stylesheet" href="static/base.css"
+            link rel="stylesheet" href="static/base.css";
             title { (page_title) }
         }
     }
